@@ -1,0 +1,8 @@
+# Use the official Nginx image as the base image
+FROM nginx:latest
+
+# Expose the default Nginx port (8080)
+EXPOSE 80
+
+# Start Nginx when the container starts
+CMD ["nginx", "-g", "daemon off;"]
